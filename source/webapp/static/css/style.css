@@ -34,3 +34,14 @@ span{
     margin-left: 450px;
     margin-bottom: 30px;
 }
+
+.card.w-75{
+    margin-left: 80px;
+}
+.btn-danger{
+    width: 100px;
+    margin-top: 20px;
+}
+.no{
+    width: 100px;
+}

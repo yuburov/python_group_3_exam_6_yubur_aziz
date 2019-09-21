@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Вы уверены, что хотите удалить клиента - {{ guest }}?</h1>
+    <form method="POST"  class="text-center" action="{% url 'delete_view' guest.pk %}">
+        {% csrf_token %}
+        <p><input type="submit" class="btn btn-danger" value="Да"></p>
+        <p><a href="{% url 'index' %}" class="no btn btn-primary">Нет</a></p>
+    </form>
+{% endblock %}
