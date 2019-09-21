@@ -36,7 +36,7 @@ span{
 }
 
 .card.w-75{
-    margin-left: 80px;
+    margin-left: 110px;
 }
 .btn-danger{
     width: 100px;
@@ -44,4 +44,8 @@ span{
 }
 .no{
     width: 100px;
+}
+.card-body{
+    background-color: lightblue;
+    border: 2px solid black;
 }

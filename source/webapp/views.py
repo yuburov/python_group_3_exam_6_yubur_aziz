@@ -55,8 +55,8 @@ def guest_delete_view(request, pk):
         return  redirect('index')
 
 def search_guest(request):
-    list=request.GET.getlist('search')
-    guests= G_book.objects.filter(name__in=list)
+    list=request.GET.get('search')
+    guests= G_book.objects.filter(name__contains=list)
     return render(request, 'index.html', context={
         'guests': guests
     })
