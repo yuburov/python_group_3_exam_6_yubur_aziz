@@ -9,7 +9,7 @@
      {% for guest in guests %}
     <div class="card w-75 mb-3">
         <div class="card-body">
-            <h5 class="card-title">{{ guest.name }} ({{ guest.email }}) <a class="icon mr-2" href=""><i class="fas fa-edit"></i></a><a class="icon mr-2" href=""><i class="fas fa-trash-alt"></i></a> </h5>
+            <h5 class="card-title">{{ guest.name }} ({{ guest.email }}) <a class="icon mr-2" href="{% url 'update_view' guest.pk %}"><i class="fas fa-edit"></i></a><a class="icon mr-2" href=""><i class="fas fa-trash-alt"></i></a> </h5>
             <p class="card-text">{{ guest.text }}</p>
         </div>
     </div>
