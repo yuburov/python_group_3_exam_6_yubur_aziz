@@ -3,15 +3,24 @@
     <li class="nav-item">
         <a href="{% url 'book_create' %}" class="nav-link">Добавить</a>
     </li>
+    <li class="nav-item">
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search_guest' %}" method="GET" name="search">
+            <input class="form-control mr-sm-2 ml-3" type="text" placeholder="Search" name="search">
+            <input type="submit" value="Search" class="btn btn-outline-success my-2 my-sm-0">
+        </form>
+    </li>
 {% endblock %}
 {% block content %}
     <h1 class="mt-3 text-center mb-3">Гостевая книга</h1>
-     {% for guest in guests %}
-    <div class="card w-75 mb-3 text">
-        <div class="card-body">
-            <h5 class="card-title">{{ guest.name }} ({{ guest.email }}) <a class="icon mr-2" href="{% url 'update_view' guest.pk %}"><i class="fas fa-edit"></i></a><a class="icon mr-2" href="{% url 'delete_view' guest.pk %}"><i class="fas fa-trash-alt"></i></a> </h5>
-            <p class="card-text">{{ guest.text }}</p>
+    {% for guest in guests %}
+        <div class="card w-75 mb-3 text">
+            <div class="card-body">
+                <h5 class="card-title">{{ guest.name }} ({{ guest.email }}) <a class="icon mr-2"
+                                                                               href="{% url 'update_view' guest.pk %}"><i
+                        class="fas fa-edit"></i></a><a class="icon mr-2" href="{% url 'delete_view' guest.pk %}"><i
+                        class="fas fa-trash-alt"></i></a></h5>
+                <p class="card-text">{{ guest.text }}</p>
+            </div>
         </div>
-    </div>
     {% endfor %}
 {% endblock %}
