@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1 class="mt-3 text-center">Гостевая книга</h1>
+     {% for guest in guests %}
+    <div class="card w-75 mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ guest.name }} ({{ guest.email }}) <a class="icon" href=""><i class="fas fa-edit"></i> <i class="fas fa-trash-alt"></i></a> </h5>
+            <p class="card-text">{{ guest.text }}</p>
+{#            <a href="#" class="btn btn-primary">Button</a>#}
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
