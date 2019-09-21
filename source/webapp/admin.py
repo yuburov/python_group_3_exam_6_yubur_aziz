@@ -1,3 +1,4 @@
 from django.contrib import admin
+from webapp.models import G_book
 
-# Register your models here.
+admin.site.register(G_book)

@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.g_book",
+  "pk": 1,
+  "fields": {
+    "name": "John_Smith",
+    "email": "android@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt nam reprehenderit tenetur. Deleniti, praesentium tempora!",
+    "created_at": "2019-09-21T06:04:23.843Z",
+    "updated_at": "2019-09-21T06:04:23.843Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.g_book",
+  "pk": 2,
+  "fields": {
+    "name": "Sara Connor",
+    "email": "Sara_23@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa inventore modi numquam, obcaecati repellat tenetur unde. Corporis est laboriosam voluptatum?",
+    "created_at": "2019-09-21T06:05:30.438Z",
+    "updated_at": "2019-09-21T06:05:30.438Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.g_book",
+  "pk": 3,
+  "fields": {
+    "name": "Ibn Hatab",
+    "email": "Fatilou@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fugiat in iure modi, tempora vel. Ad neque non voluptatum.",
+    "created_at": "2019-09-21T06:08:49.793Z",
+    "updated_at": "2019-09-21T06:08:49.794Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.g_book",
+  "pk": 4,
+  "fields": {
+    "name": "Garry Mozart",
+    "email": "Glamoor@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem ipsam ipsum obcaecati, quidem sequi!",
+    "created_at": "2019-09-21T06:10:58.423Z",
+    "updated_at": "2019-09-21T06:10:58.423Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.g_book",
+  "pk": 5,
+  "fields": {
+    "name": "Roberto Undiano",
+    "email": "Malienko@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem corporis delectus, eum exercitationem libero maxime minus natus, necessitatibus odit omnis, quia.",
+    "created_at": "2019-09-21T06:13:35.445Z",
+    "updated_at": "2019-09-21T06:13:35.445Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.g_book",
+  "pk": 6,
+  "fields": {
+    "name": "Sibastian Canales",
+    "email": "Gamarjoba@gmail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque error eveniet iste laudantium quas quasi sunt unde! Deleniti dicta fuga modi nam nihil, praesentium quae repudiandae temporibus unde veritatis.",
+    "created_at": "2019-09-21T06:17:04.750Z",
+    "updated_at": "2019-09-21T06:17:04.751Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$zLuWkXkUqdTG$ATp/FffwzKbtCDhq563KPCUJOaELn8RoeRTAWgFt2eM=",
+    "last_login": "2019-09-21T05:55:34Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "\u0415\u0433\u043e\u0440",
+    "last_name": "\u041c\u0438\u0442\u0440\u0443\u0448\u0438\u043d",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T05:21:06Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
